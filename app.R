@@ -388,7 +388,7 @@ shinyApp(ui, server)
 # library(shinylive)
 #
 # # Exporta la app a HTML y recursos estáticos
-shinylive::export(appdir = ".", destdir = "docs")
+# shinylive::export(appdir = ".", destdir = "docs")
 
 # remotes::install_version("ggplot2", version = "3.5.2", repos = "https://cran.r-project.org")
 # packageVersion("ggplot2")
