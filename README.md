@@ -1,5 +1,5 @@
 # VIS-PIES-MEX2024
-[![DOI](https://zenodo.org/badge/1067560127.svg)](https://doi.org/10.5281/zenodo.17240877)
+[![DOI](https://zenodo.org/badge/1067560127.svg)](https://doi.org/10.5281/zenodo.17240877)\
 Shiny App de visualización de resultados de la encuesta a expertos en elecciones subnacionales nivel estado-elección 2024.\
 \
 Realizada a partir de los datos:\
