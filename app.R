@@ -31,9 +31,9 @@ entidades <- entidades %>%
 
 base <- base %>% 
   mutate('Tipo de elección'= factor(case_when(str_ends(election,pattern = "_D1")~"Diputados locales",
-                                              str_ends(election,pattern = "_G1")~"Gubernatura",
+                                              str_ends(election,pattern = "_G1")~"Gobernadores",
                                               str_ends(election,pattern = "_M1")~"Munícipes"),
-                                    levels = c("Gubernatura","Diputados locales","Munícipes")))
+                                    levels = c("Gobernadores","Diputados locales","Munícipes")))
 # table(base$`Tipo de elección`)
 
 # Unir variables con shape
@@ -48,7 +48,7 @@ x <- left_join(entidades,base,by="estado")
 
 
 # Listado de categorias en vector
-tipos <- c("Gubernatura","Diputados locales","Munícipes")
+tipos <- c("Gobernadores","Diputados locales","Munícipes")
 vars <- c("PEIIndexp", "laws.1", "procedures.1", "boundaries.1", 
           "votereg", "partyreg", "media", "finance", 
           "voting", "count", "results", "EMBs")
